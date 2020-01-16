@@ -1,0 +1,3 @@
+"..\..\..\..\packages\OpenCover.4.6.519\tools\OpenCover.Console.exe" -target:"..\..\..\..\packages\NUnit.ConsoleRunner.3.8.0\tools\nunit3-console.exe" -targetargs:"Empower.Tests.dll" -filter:"+[Empower.Service]Empower.Service*+[Empower.Repository]Empower.Repository*" -excludebyattribute:"*.ExcludeFromCoverage*" -register:path64 -output:"_CodeCoverageResult.xml"
+
+"..\..\..\..\packages\ReportGenerator.3.1.2\tools\ReportGenerator.exe" "-reports:_CodeCoverageResult.xml" "-targetdir:_CodeCoverageReport"
